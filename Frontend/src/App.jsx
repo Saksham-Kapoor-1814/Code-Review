@@ -21,7 +21,7 @@ function App() {
   },[])
 
    async function reviewCode(){
-    const response = await axios.post("http://localhost:3000/ai/get-review", { code })
+    const response = await axios.post("http://localhost:3001/ai/get-review", { code })
 
     setReview(response.data)
   }
@@ -43,7 +43,7 @@ function App() {
           borderRadius: "5px",
           border: "1px solid #ddd",
           height: "100%",
-          // overflowY: "scroll",
+          overflow: "scroll",
           width: "100%",
         }}
       />

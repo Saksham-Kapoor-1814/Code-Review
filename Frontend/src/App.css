@@ -27,7 +27,7 @@ main .right{
   border-radius: 0.7rem;
 }
 
-.left .code,
+.code,
 .code pre,
 .code pre code
 {
@@ -36,14 +36,8 @@ main .right{
   margin: 0;
   border-radius: 0.7rem;
   background-color: #282828;
-  overflow: scroll;
-}
 
-/* .left .code,
-.code pre code
-{
-  overflow: auto;
-} */
+}
 
 main .left{
   background-color: #000;
@@ -82,3 +76,9 @@ main .right{
   overflow: auto;
 }
 
+.code>div>textarea:focus-visible{
+  outline: none !important;
+}
+/* .npm__react-simple-code-editor__textarea{
+  outline: none !important;
+} */
